@@ -1,1 +1,90 @@
+Aja como um Engenheiro de Automação sênior e Especialista em Design Pedagógico de Tecnologia para Crianças e Adolescentes. Você foi contratado pela "Mente e Código", uma plataforma moderna de ensino de tecnologia, para escrever um eBook educacional completo, altamente prático e comercializável. 
+
+O objetivo do eBook é ensinar eletrônica e programação do zero através do projeto de um "Poste de Luz Inteligente" usando Arduino Uno e Sensor LDR, servindo como a introdução perfeita e o gancho de vendas para o nosso Curso Completo de Robótica Educacional.
+
+O tom de voz deve ser empolgante, maker, amigável (estilo "irmão mais velho" ou mentor de tecnologia), de fácil leitura para jovens de 7 a 14 anos e seus pais, mas com rigor técnico disfarçado em analogias simples.
+
+Escreva o conteúdo textual completo, capítulo por capítulo, sem resumos, placeholders ou abreviações. Escreva tudo o que o aluno precisa para aprender e construir.
+
+---
+
+### 📋 REGRAS DE FORMATAÇÃO, ESPAÇAMENTO E DESIGN TEXTUAL:
+
+Para garantir que o livro tenha um ritmo de leitura visualmente confortável (gerando o equivalente a um e-book impresso/diagramado de 25 a 35 páginas), você deve estruturar o texto seguindo rigidamente estas regras:
+
+1. ESTRUTURAÇÃO DE TÍTULOS (Hierarquia Clara):
+   - Título do E-book: Use Markdown # (H1) - Apenas uma vez na capa.
+   - Títulos de Capítulos: Use Markdown ## (H2) - Sempre iniciando uma nova grande seção.
+   - Subtítulos e Subseções: Use Markdown ### (H3) para micro-tópicos.
+
+2. REGRAS DE PARÁGRAFOS E ESPAÇAMENTO VIRTUAL:
+   - Densidade do Texto: NENHUM parágrafo deve ter mais do que 3 ou 4 linhas de texto corrido. Parágrafos longos cansam o público jovem.
+   - Espaçamento: Deixe sempre uma linha em branco completa entre um parágrafo e outro.
+   - Ritmo de Leitura: Alterne parágrafos explicativos curtos com listas de tópicos para tornar a leitura dinâmica ("scannable").
+
+3. DESTAQUES VISUAIS E TIPOGRAFIA NO TEXTO:
+   - Termos Técnicos e Componentes: Sempre que introduzir um componente ou termo importante, use o negrito (ex: **Arduino Uno**, **Resistor**, **LDR**).
+   - Trechos de Atenção/Avisos: Sempre que for dar um aviso de segurança ou uma curiosidade "Maker", isole o texto usando a marcação de bloco de citação (Markdown '>').
+   - Código Fonte: O código do Arduino deve ser escrito obrigatoriamente dentro de um bloco de sintaxe limpa usando três crases e a linguagem especificada (```cpp ... 
+```).
+
+4. MARCAÇÕES PARA O DIAGRAMADOR:
+   - Ao longo do texto, inclua notas entre colchetes direcionadas à equipe de design da Mente e Código (ex: [DICA DE DIAGRAMAÇÃO: Use fonte Sans-Serif moderna como Montserrat para os títulos, tamanho 24pt, e fonte Roboto para o corpo do texto, tamanho 11pt, com espaçamento entre linhas de 1.5. Aplique a cor principal da Mente e Código nos títulos]).
+
+5. RITMO PEDAGÓGICO:
+   - Cada capítulo deve terminar com um breve resumo de uma linha chamado "🛠️ Desafio de Bolso" ou "💡 Pensamento Maker" para fixar o aprendizado.
+
+---
+
+### ESTRUTURA REQUISITADA PARA O EBOOK:
+
+# TÍTULO: Meu Primeiro Projeto de Robótica: O Poste de Luz Inteligente com Arduino
+## Subtítulo: Descubra os segredos da eletrônica e programe o seu primeiro circuito que toma decisões sozinho!
+## Autor: Mente e Código - Escola de Tecnologia
+
+#### INTRODUÇÃO: BEM-VINDO AO MOVIMENTO MAKER
+- Texto motivacional sobre o que é ser um Maker (Criador).
+- Explicação do superpoder de criar suas próprias tecnologias em vez de apenas consumi-las.
+- Alinhamento de expectativas: errar faz parte do processo dos grandes inventores.
+
+#### CAPÍTULO 1: O SEU INVENTÁRIO DE INVENTOR (CONHECENDO OS COMPONENTES)
+- Apresentação lúdica, detalhada e funcional de cada item:
+  * Placa **Arduino Uno** (O cérebro do nosso projeto).
+  * **Protoboard** (O laboratório de conexões sem solda).
+  * **LED** (A nossa lâmpada mágica).
+  * Sensores **LDR** (Os olhos que percebem a luz do ambiente).
+  * **Resistores** de 220 Ohms e 10k Ohms (Os escudos protetores contra queimas).
+  * Fios **Jumpers** (As estradas de energia).
+- Adicione uma marcação de [Inserir Foto/Ilustração do Componente] para cada um.
+
+#### CAPÍTULO 2: O SEGREDO DA ELETRICIDADE (SEM COMPLICAÇÃO)
+- Explicação da teoria elétrica usando estritamente a "Analogia Hidráulica (da Água)".
+- Definir de forma ultra simples: Tensão ($V$), Corrente ($I$) e Resistência ($R$).
+- Por que o LED precisa de um resistor? Explique o conceito de proteção de componentes de forma visual.
+
+#### CAPÍTULO 3: PASSO A PASSO DA MONTAGEM FÍSICA (O HARDWARE)
+- Guia detalhado de montagem em texto dividido em etapas claras:
+  * Etapa 1: Preparando as linhas de energia da Protoboard (+ e - no Arduino).
+  * Etapa 2: Montando o circuito de proteção do LED na porta digital 13.
+  * Etapa 3: Montando o divisor de tensão do sensor LDR na porta analógica A0.
+- Adicione marcações de [Inserir Diagrama de Conexão Fritzing] para orientar o designer.
+- Inclua um "Box de Segurança do Inventor" (usando '>') com um checklist para conferir as conexões antes de ligar o cabo USB.
+
+#### CAPÍTULO 4: DANDO VIDA AO PROJETO (A LÓGICA DE PROGRAMAÇÃO)
+- Introdução ao que é um algoritmo e o que é o software IDE do Arduino.
+- Apresente o código completo em C++ formatado em bloco de código adequado para o Arduino.
+- Após o código, faça uma seção de "Linha por Linha do Código Explicada para Humanos", destrinchando de forma didática o que o 'setup()', o 'loop()', o 'analogRead()' e a estrutura de decisão 'if / else' fazem.
+
+#### CAPÍTULO 5: FALANDO COM O SEU ARDUINO (O MONITOR SERIAL E CALIBRAÇÃO)
+- Explicação passo a passo de como abrir o Monitor Serial na tela.
+- O que são aqueles números mudando na tela (0 a 1023)? Explique como o Arduino lê o mundo analógico de forma simples.
+- Exercício Prático: Como o aluno pode passar a mão em cima do LDR, ver o número cair e calibrar a linha do 'if (valorLDR < 500)' do código para que o poste funcione perfeitamente na iluminação específica do quarto dele.
+
+#### CONCLUSÃO E OS SEUS PRÓXIMOS PASSOS NO MUNDO DA ROBÓTICA
+- Mensagem de parabéns pela conclusão do primeiro projeto inteligente.
+- Parágrafo de transição comercial (Upsell): Mostrar que este poste de luz inteligente é apenas o primeiro passo. Explicar o que o aluno será capaz de fazer no Curso Completo de Robótica Educacional da Mente e Código (robôs seguidores de linha, braços mecânicos, automação residencial, Internet das Coisas).
+- CTA (Chamada para Ação): Instruções para usar o cupom exclusivo de aluno inicial impresso na contracapa e garantir a vaga com desconto no curso completo.
+
+---
+Comece a escrever o eBook agora do início, de forma fluida, rica, profunda e sem cortes.
 
